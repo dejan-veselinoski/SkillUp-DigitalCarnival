@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Атракцијата на Симона 🎵</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    /* Додади свои стилови овде */
+    #animation-stage {
+      background: #0a0518;
+      cursor: pointer;
+      position: relative;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body class="student-page">
+
+  <header class="student-header">
+    <a href="../../index.html" class="back-link">← Назад кон главната страница</a>
+    <h1 class="student-title">🎵 Атракцијата на Симона</h1>
+  </header>
+
+  <!-- Сцена за анимација — пишувај го JS кодот тука -->
+  <div id="animation-stage">
+    <p class="placeholder-text">Кликни на сцената за да го стартуваш концертот! 🎤</p>
+  </div>
+
+  <!-- Задача -->
+  <div class="task-card">
+    <h2>📋 Инструкции за задачата</h2>
+    <p>
+      Направи <strong>Концертна светлосна шоу (Concert Light Show)</strong> со
+      разнобојни светлосни прстени кои се шират и исчезнуваат при секој клик
+      на сцената — исто како светлата на жив концерт или музички настан.
+      Додај и музички ноти (♩ ♪ ♫ ♬ 🎵 🎶) кои постојано лебдат нагоре низ
+      сцената, а при движење на глувчето да остава шарена светкава патека.
+    </p>
+  </div>
+
+  <script>
+    // ============================================
+    // Симона — Концертна Светлосна Шоу
+    // Пишувај го твојот JavaScript код тука!
+    // ============================================
+
+    const stage = document.getElementById('animation-stage');
+
+    const musicNotes = ['♩', '♪', '♫', '♬', '🎵', '🎶'];
+
+    // При клик: создај светлосен прстен кој се шири и исчезнува
+    // stage.addEventListener('click', (e) => {
+    //   const rect = stage.getBoundingClientRect();
+    //   const x = e.clientX - rect.left;
+    //   const y = e.clientY - rect.top;
+    //   // Создај div-прстен на (x, y), анимирај го да расте и да избледи...
+    // });
+
+    // При движење на глувчето: шарена патека
+    // stage.addEventListener('mousemove', (e) => { ... });
+
+    // setInterval: испушти нова нота на секои 800ms
+    // setInterval(() => { ... }, 800);
+
+    // Твојот код продолжува тука...
+
+  </script>
+</body>
+</html>

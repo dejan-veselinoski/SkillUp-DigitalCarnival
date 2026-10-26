@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Атракцијата на Филип ⏰</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    /* Додади свои стилови овде */
+    #animation-stage {
+      background: #020212;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body class="student-page">
+
+  <header class="student-header">
+    <a href="../../index.html" class="back-link">← Назад кон главната страница</a>
+    <h1 class="student-title">⏰ Атракцијата на Филип</h1>
+  </header>
+
+  <!-- Сцена за анимација — пишувај го JS кодот тука -->
+  <div id="animation-stage">
+    <p class="placeholder-text">Дигиталниот часовник наскоро ќе се вклучи… ⏰</p>
+  </div>
+
+  <!-- Задача -->
+  <div class="task-card">
+    <h2>📋 Инструкции за задачата</h2>
+    <p>
+      Направи <strong>Интерактивен дигитален часовник</strong> со динамични
+      дигитални секунди и позадински елементи кои реагираат на времето.
+      Часовникот треба да прикажува реално ЧЧ:ММ:СС, а позадинската боја
+      (или некои визуелни елементи) да се менуваат во зависност од часот
+      (утро/пладне/вечер/ноќ). Додај и некоја дополнителна интерактивност
+      (на пример: кликот менува формат 12h/24h).
+    </p>
+  </div>
+
+  <script>
+    // ============================================
+    // Филип — Дигитален часовник
+    // Пишувај го твојот JavaScript код тука!
+    // ============================================
+
+    const stage = document.getElementById('animation-stage');
+
+    function updateClock() {
+      const now = new Date();
+      const h = now.getHours();
+      const m = now.getMinutes();
+      const s = now.getSeconds();
+
+      // Форматирај и прикажи го времето:
+      // const timeStr = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      // clockEl.textContent = timeStr;
+
+      // Провери го добата на денот и смени ја позадината / бојата...
+    }
+
+    // setInterval(updateClock, 1000);
+    // updateClock(); // Прикажи веднаш
+
+    // Твојот код продолжува тука...
+
+  </script>
+</body>
+</html>
